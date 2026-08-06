@@ -1,14 +1,15 @@
 # Studio S. — Dark Cinematic Portfolio
 
-A responsive design portfolio for an independent digital designer serving cafés, restaurants, and local hospitality businesses in Ghent.
+A responsive design portfolio for an independent digital designer serving distinctive local businesses and places.
 
 ## Included projects
 
 - **FOS Café** — an expressive neighbourhood café website
 - **KINU** — an ultra-minimal Japanese restaurant website
 - **Maison Éloise** — a classic European property-rental landing page
+- **Maison Dentaire** — a calm-clinical dental practice landing page
 
-The portfolio includes detailed process case studies for FOS and KINU, and all three concepts are complete, working websites inside this repository.
+The portfolio includes detailed process case studies for FOS and KINU, and all four concepts are complete, working websites inside this repository.
 
 It also includes a complete brand-collateral library for FOS and KINU: print-ready menus, two-sided business cards, digital menu boards, and portrait campaign assets. The PDFs are downloadable directly from the portfolio.
 
@@ -43,6 +44,7 @@ Then open `http://localhost:8080`.
 ├── fos/             # FOS Café case study
 ├── kinu/            # KINU restaurant case study
 ├── residence/       # Maison Éloise rental case study
+├── dentist/         # Maison Dentaire dental-practice landing page
 ├── collateral/      # Editable FOS and KINU digital collateral
 ├── output/pdf/      # Print-ready menus and business cards
 └── assets/          # Optimized portfolio imagery
