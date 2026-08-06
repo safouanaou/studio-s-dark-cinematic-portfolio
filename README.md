@@ -16,6 +16,8 @@ The portfolio’s design-process section explains the thinking behind the work: 
 
 The services area includes three transparent packages with starting prices, defined deliverables, realistic timelines, optional additions, and straightforward project terms.
 
+The personal-profile chapter introduces the independent designer behind Studio S. with an editorial portrait, first-person story, working approach, capabilities, and client-relevant details.
+
 ## Run locally
 
 This is a dependency-free static website. Start any static server from the repository root:
@@ -30,7 +32,7 @@ Then open `http://localhost:8080`.
 
 - Replace “Studio S.” with the final personal or business name.
 - Replace `hello@studio-s.be` with the real contact email.
-- Update the profile copy with final personal information.
+- Extend the public profile later with any name, languages, education, or social links you want clients to see.
 - Connect the repository to GitHub Pages, Cloudflare Pages, or another static host.
 
 ## Structure
