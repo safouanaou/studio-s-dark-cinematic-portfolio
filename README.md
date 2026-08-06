@@ -10,6 +10,8 @@ A responsive design portfolio for an independent digital designer serving cafés
 
 The portfolio includes detailed process case studies for FOS and KINU, and all three concepts are complete, working websites inside this repository.
 
+It also includes a complete brand-collateral library for FOS and KINU: print-ready menus, two-sided business cards, digital menu boards, and portrait campaign assets. The PDFs are downloadable directly from the portfolio.
+
 ## Run locally
 
 This is a dependency-free static website. Start any static server from the repository root:
@@ -35,5 +37,7 @@ Then open `http://localhost:8080`.
 ├── fos/             # FOS Café case study
 ├── kinu/            # KINU restaurant case study
 ├── residence/       # Maison Éloise rental case study
+├── collateral/      # Editable FOS and KINU digital collateral
+├── output/pdf/      # Print-ready menus and business cards
 └── assets/          # Optimized portfolio imagery
 ```

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-labelledby="title desc">
+  <title id="title">FOS digital menu board</title><desc id="desc">Editable vector collateral designed by Studio S.</desc>
+  <rect width="1920" height="1080" fill="#F1EADC"/>
+  <rect x="70" y="70" width="1780" height="940" fill="none" stroke="#1D211C" stroke-width="2"/>
+  <text x="115" y="185" fill="#1D211C" font-family="Georgia,serif" font-size="118">FOS<tspan fill="#EF5C32">.</tspan></text>
+  <text x="1795" y="135" text-anchor="end" fill="#1D211C" font-family="monospace" font-size="20" letter-spacing="3">TODAY AT THE COUNTER</text>
+  <line x1="115" y1="230" x2="1795" y2="230" stroke="#1D211C" stroke-width="2"/>
+  <text x="115" y="355" fill="#1E48D7" font-family="Georgia,serif" font-size="62">COFFEE</text>
+  <text x="115" y="430" fill="#1D211C" font-family="Georgia,serif" font-size="40">Espresso</text><text x="690" y="430" text-anchor="end" fill="#1D211C" font-family="monospace" font-size="26">3.20</text>
+  <text x="115" y="500" fill="#1D211C" font-family="Georgia,serif" font-size="40">Flat white</text><text x="690" y="500" text-anchor="end" fill="#1D211C" font-family="monospace" font-size="26">4.20</text>
+  <text x="115" y="570" fill="#1D211C" font-family="Georgia,serif" font-size="40">Filter</text><text x="690" y="570" text-anchor="end" fill="#1D211C" font-family="monospace" font-size="26">4.50</text>
+  <text x="800" y="355" fill="#1E48D7" font-family="Georgia,serif" font-size="62">KITCHEN</text>
+  <text x="800" y="430" fill="#1D211C" font-family="Georgia,serif" font-size="40">Ricotta toast</text><text x="1450" y="430" text-anchor="end" fill="#1D211C" font-family="monospace" font-size="26">12.50</text>
+  <text x="800" y="500" fill="#1D211C" font-family="Georgia,serif" font-size="40">Soft eggs</text><text x="1450" y="500" text-anchor="end" fill="#1D211C" font-family="monospace" font-size="26">11.00</text>
+  <text x="800" y="570" fill="#1D211C" font-family="Georgia,serif" font-size="40">Market focaccia</text><text x="1450" y="570" text-anchor="end" fill="#1D211C" font-family="monospace" font-size="26">13.50</text>
+  <circle cx="1645" cy="480" r="125" fill="#EF5C32"/><text x="1645" y="465" text-anchor="middle" fill="#F1EADC" font-family="monospace" font-size="21" letter-spacing="2">OPEN TODAY</text><text x="1645" y="510" text-anchor="middle" fill="#F1EADC" font-family="Georgia,serif" font-size="35">08-17</text>
+  <line x1="115" y1="700" x2="1795" y2="700" stroke="#1D211C" stroke-width="2"/>
+  <text x="115" y="845" fill="#1D211C" font-family="Georgia,serif" font-size="82">GOOD COFFEE.</text><text x="700" y="845" fill="#EF5C32" font-family="Georgia,serif" font-size="82">NO RUSH.</text>
+  <text x="1795" y="865" text-anchor="end" fill="#1D211C" font-family="monospace" font-size="18">VOLDERSTRAAT 12 - GENT</text>
+</svg>
