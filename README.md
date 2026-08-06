@@ -6,6 +6,7 @@ A responsive design portfolio for an independent digital designer serving cafés
 
 - **FOS Café** — an expressive neighbourhood café website
 - **KINU** — an ultra-minimal Japanese restaurant website
+- **Maison Éloise** — a classic European property-rental landing page
 
 Both case studies are included as complete, working websites inside this repository.
 
@@ -33,5 +34,6 @@ Then open `http://localhost:8080`.
 ├── index.html       # Portfolio
 ├── fos/             # FOS Café case study
 ├── kinu/            # KINU restaurant case study
+├── residence/       # Maison Éloise rental case study
 └── assets/          # Optimized portfolio imagery
 ```

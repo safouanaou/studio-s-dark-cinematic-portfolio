@@ -72,12 +72,14 @@ button { font: inherit; }
 .film-project:hover .project-bg img { transform: scale(1.018); }
 .project-fos .project-bg img { object-position: center; filter: saturate(.56) brightness(.58); }
 .project-kinu .project-bg img { object-position: 63% 69%; filter: saturate(.32) brightness(.48); }
+.project-residence .project-bg img { object-position: center; filter: saturate(.46) brightness(.52); }
 .project-vignette { position: absolute; z-index: -2; inset: 0; background: linear-gradient(180deg,rgba(0,0,0,.46),rgba(0,0,0,.06) 36%,rgba(0,0,0,.78)),radial-gradient(circle at 50% 48%,transparent 25%,rgba(0,0,0,.52) 110%); }
 .project-chapter { display: flex; justify-content: space-between; font: 400 .55rem var(--mono); text-transform: uppercase; letter-spacing: .12em; }
 .project-title { align-self: center; text-align: center; }
 .project-title > p:first-child { font: 400 .55rem var(--mono); text-transform: uppercase; letter-spacing: .16em; }
 .project-title h3 { margin: .5rem 0; font: 500 clamp(8rem,22vw,22rem)/.75 var(--display); letter-spacing: -.06em; text-shadow: 0 2px 50px rgba(0,0,0,.55); }
 .project-fos .project-title h3 { letter-spacing: -.1em; }
+.project-residence .project-title h3 { font-size: clamp(5rem,14vw,14rem); }
 .project-line { width: fit-content; margin: 2rem auto 0; text-align: left; font: 400 clamp(1.1rem,1.8vw,1.7rem)/1.25 var(--display); font-style: italic; }
 .project-bottom { display: grid; grid-template-columns: 1fr .6fr .4fr; gap: 3rem; align-items: end; padding-top: 1.2rem; border-top: 1px solid rgba(233,228,216,.45); }
 .project-bottom > p { max-width: 30rem; margin: 0; font: 300 .68rem/1.75 var(--sans); }
