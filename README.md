@@ -12,6 +12,8 @@ The portfolio includes detailed process case studies for FOS and KINU, and all t
 
 It also includes a complete brand-collateral library for FOS and KINU: print-ready menus, two-sided business cards, digital menu boards, and portrait campaign assets. The PDFs are downloadable directly from the portfolio.
 
+The portfolio’s design-process section explains the thinking behind the work: research, positioning, hierarchy, visual direction, responsive prototyping, accessibility, refinement, and brand-system extension.
+
 ## Run locally
 
 This is a dependency-free static website. Start any static server from the repository root:
