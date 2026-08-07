@@ -36,3 +36,32 @@ document.querySelectorAll('.reveal').forEach((element, index) => {
 });
 
 document.querySelector('[data-year]').textContent = new Date().getFullYear();
+
+const enquiryForm = document.querySelector('#enquiry-form');
+const enquiryStatus = document.querySelector('#enquiry-status');
+
+enquiryForm?.addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  const data = new FormData(enquiryForm);
+  const name = data.get('name')?.toString().trim() || '';
+  const business = data.get('business')?.toString().trim() || '';
+  const subject = `Project enquiry — ${business || name}`;
+  const body = [
+    `Name: ${name}`,
+    `Email: ${data.get('email')}`,
+    `Business or project: ${business || 'Not provided'}`,
+    `Service: ${data.get('service')}`,
+    `Approximate budget: ${data.get('budget')}`,
+    `Desired launch: ${data.get('launch')}`,
+    '',
+    'Project details:',
+    data.get('message')
+  ].join('\n');
+
+  if (enquiryStatus) {
+    enquiryStatus.textContent = 'Your email app is opening. Review the enquiry, then press send.';
+  }
+
+  window.location.href = `mailto:aouezgharsafouan@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+});
