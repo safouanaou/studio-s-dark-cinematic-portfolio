@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="MATERIA 01 is a fictional Brussels skincare atelier creating precise formulas for living skin." />
+    <meta name="theme-color" content="#f4f4f0" />
+    <title>MATERIA 01 — Skin is not a surface</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Mono:wght@300;400;500&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="intro" aria-hidden="true"><span>MATERIA / 01</span><i></i></div>
+    <div class="cursor-mark" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="MATERIA 01, back to top"><strong>MATERIA</strong><sup>01</sup></a>
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+        <a href="#collection">Shop</a><a href="#method">Method</a><a href="#formula">Formula index</a><a href="#studio">Atelier</a>
+      </nav>
+      <button class="cart-trigger" type="button" data-open-cart>Cart <span data-cart-count>0</span></button>
+      <button class="menu-trigger" type="button" aria-expanded="false" aria-controls="site-nav"><span>Menu</span><i></i></button>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-edge" aria-hidden="true"><span>Brussels</span><span>Skin atelier</span><span>Est. 2026</span></div>
+        <div class="hero-copy">
+          <p class="eyebrow reveal">Functional skincare / designed in Brussels</p>
+          <h1 id="hero-title" class="reveal">Skin is not<br />a surface.</h1>
+          <p class="hero-note reveal">It is an active material. We make exact formulas that work with its shifts, rhythms and contradictions.</p>
+          <a class="block-link reveal" href="#collection"><span>Shop the first edition</span><b aria-hidden="true">→</b></a>
+        </div>
+        <div class="hero-visual" data-parallax=".08">
+          <img src="assets/materia-hero.webp" alt="Silver MATERIA serum bottle and cream jar arranged with acid-yellow paper and black mineral stone" width="1536" height="1024" />
+          <div class="visual-label"><span>Object 01</span><strong>Barrier / Serum</strong><small>30 ml · €58</small></div>
+          <div class="target" aria-hidden="true"><i></i><i></i></div>
+        </div>
+        <aside class="hero-index" aria-label="Edition index"><b>01</b><span>Repair</span><b>02</b><span>Hydrate</span><b>03</b><span>Protect</span></aside>
+        <div class="hero-specs"><span>Tested on human skin</span><span>Fragrance free</span><span>Made in the EU</span></div>
+      </section>
+
+      <div class="ticker" aria-hidden="true"><div><span>FORM FOLLOWS FUNCTION</span><i>+</i><span>SKIN CHANGES / FORMULAS RESPOND</span><i>+</i><span>NO EMPTY CLAIMS</span><i>+</i><span>FORM FOLLOWS FUNCTION</span><i>+</i><span>SKIN CHANGES / FORMULAS RESPOND</span><i>+</i><span>NO EMPTY CLAIMS</span></div></div>
+
+      <section class="collection section" id="collection" aria-labelledby="collection-title">
+        <header class="section-head reveal"><div><span>Edition 01</span><span>Four working objects</span></div><h2 id="collection-title">The daily<br />instruments.</h2><p>Each formula has one job. Layer them, separate them, use only what the day asks for.</p></header>
+        <div class="filter-row reveal" role="group" aria-label="Filter products"><button class="is-active" type="button" data-filter="all">All / 04</button><button type="button" data-filter="cleanse">Cleanse</button><button type="button" data-filter="treat">Treat</button><button type="button" data-filter="seal">Seal</button></div>
+        <div class="product-grid">
+          <article class="product reveal" data-family="treat" data-product="barrier-serum">
+            <button class="product-image" type="button" aria-label="View Barrier Serum 01"><img src="assets/materia-collection.webp" alt="Brushed-aluminium skincare serum bottle" loading="lazy" /><span class="product-number">/01</span><span class="product-state">Bestseller</span></button>
+            <div class="product-info"><div><h3>Barrier Serum 01</h3><p>Ectoin · Beta-glucan · Ceramides</p></div><strong>€58</strong></div><button class="quick-add" type="button">Quick add <span>+</span></button>
+          </article>
+          <article class="product reveal" data-family="cleanse" data-product="mineral-cleanse">
+            <button class="product-image crop-tube" type="button" aria-label="View Mineral Cleanse 02"><img src="assets/materia-collection.webp" alt="White aluminium skincare cleansing tube" loading="lazy" /><span class="product-number">/02</span></button>
+            <div class="product-info"><div><h3>Mineral Cleanse 02</h3><p>Amino acids · Kaolin · Glycerin</p></div><strong>€34</strong></div><button class="quick-add" type="button">Quick add <span>+</span></button>
+          </article>
+          <article class="product reveal" data-family="seal" data-product="lipid-veil">
+            <button class="product-image crop-jar" type="button" aria-label="View Lipid Veil 03"><img src="assets/materia-collection.webp" alt="Chrome skincare moisturiser jar" loading="lazy" /><span class="product-number">/03</span><span class="product-state">New object</span></button>
+            <div class="product-info"><div><h3>Lipid Veil 03</h3><p>Squalane · Cholesterol · Oat lipid</p></div><strong>€52</strong></div><button class="quick-add" type="button">Quick add <span>+</span></button>
+          </article>
+          <article class="product product-acid reveal" data-family="treat" data-product="night-shift">
+            <button class="product-image" type="button" aria-label="View Night Shift 04"><div class="type-object"><small>ACTIVE FORMULA</small><b>NIGHT<br />SHIFT</b><span>04 / 30ML</span></div><span class="product-number">/04</span></button>
+            <div class="product-info"><div><h3>Night Shift 04</h3><p>Retinal · Peptide · Bisabolol</p></div><strong>€64</strong></div><button class="quick-add" type="button">Quick add <span>+</span></button>
+          </article>
+        </div>
+      </section>
+
+      <section class="manifest" id="method" aria-labelledby="manifest-title">
+        <div class="manifest-label"><span>M / Method</span><span>Declaration 001</span></div>
+        <div class="manifest-text"><p class="reveal">Less ritual.</p><p class="outline reveal">More response.</p><p class="reveal">No perfection.</p></div>
+        <div class="manifest-copy reveal"><span>Our position</span><p>Skin is living, variable and intelligently defensive. We reject flawless-skin mythology in favour of barrier literacy, precise actives and routines that know when to stop.</p><a href="#formula">Read the formula index <b>→</b></a></div>
+        <div class="manifest-stamp" aria-hidden="true"><span>MATERIA · BRUSSELS · FORM 01 ·</span><b>+</b></div>
+      </section>
+
+      <section class="formula section" id="formula" aria-labelledby="formula-title">
+        <div class="formula-image reveal" data-parallax=".05"><img src="assets/materia-lab.webp" alt="Clear skincare gel, chrome spatula and black mineral sample on a laboratory grid" loading="lazy" width="1536" height="1024" /><span>Fig. 01 / Hydration study</span></div>
+        <div class="formula-copy">
+          <header class="reveal"><p>Inside object 01</p><h2 id="formula-title">A barrier is<br />an intelligence.</h2><span>Not a wall.</span></header>
+          <div class="ingredient-list">
+            <button class="ingredient reveal is-open" type="button" aria-expanded="true"><span>01</span><strong>Ectoin</strong><i>+</i><em>A stress-protection molecule that helps skin retain water under environmental pressure.</em></button>
+            <button class="ingredient reveal" type="button" aria-expanded="false"><span>02</span><strong>Beta-glucan</strong><i>+</i><em>A calming polysaccharide selected to support recovery and reduce reactive discomfort.</em></button>
+            <button class="ingredient reveal" type="button" aria-expanded="false"><span>03</span><strong>Ceramide NP</strong><i>+</i><em>A skin-identical lipid that reinforces the structure holding moisture inside the barrier.</em></button>
+          </div>
+        </div>
+      </section>
+
+      <section class="finder" aria-labelledby="finder-title">
+        <header class="finder-head reveal"><span>Routine generator / Beta</span><h2 id="finder-title">What is your skin<br />doing today?</h2><p>Choose the state that feels closest. We will keep the answer short.</p></header>
+        <div class="state-grid reveal" role="group" aria-label="Choose your current skin state"><button type="button" data-state="tight">Tight / depleted <span>01</span></button><button type="button" data-state="reactive">Reactive / warm <span>02</span></button><button type="button" data-state="congested">Congested / uneven <span>03</span></button><button type="button" data-state="steady">Steady / maintain <span>04</span></button></div>
+        <div class="finder-result" aria-live="polite"><span>Your two-object edit</span><div><b data-routine-code>— / —</b><h3 data-routine-title>Select a skin state</h3><p data-routine-copy>No ten-step prescription. Two compatible formulas, selected around what your barrier is communicating now.</p></div><button type="button" data-add-routine disabled>Add the edit <span data-routine-price>—</span></button></div>
+      </section>
+
+      <section class="atelier section" id="studio" aria-labelledby="atelier-title">
+        <div class="atelier-title reveal"><span>Brussels / Belgium</span><h2 id="atelier-title">Made as<br />objects.<br /><i>Used as tools.</i></h2></div>
+        <figure class="atelier-image reveal"><img src="assets/materia-collection.webp" alt="MATERIA skincare collection arranged on a graphic studio grid" loading="lazy" width="1254" height="1254" /><figcaption>Edition 01 / Production study</figcaption></figure>
+        <div class="atelier-copy reveal"><span>Atelier note 01</span><p>We design formulas and their vessels together. Aluminium protects light-sensitive actives, travels well and enters established recycling streams. Every object is numbered so the routine reads clearly, even half awake.</p><dl><div><dt>Development</dt><dd>Brussels</dd></div><div><dt>Production</dt><dd>European Union</dd></div><div><dt>Testing</dt><dd>Independent panel</dd></div><div><dt>Position</dt><dd>Vegan / fragrance-free</dd></div></dl></div>
+      </section>
+
+      <section class="newsletter"><div><span>Field notes / irregularly issued</span><h2>New formulas.<br />No noise.</h2></div><form><label for="email">Email address</label><div><input id="email" type="email" placeholder="YOU@DOMAIN.COM" required /><button type="submit">Join <span>→</span></button></div><p aria-live="polite"></p></form></section>
+    </main>
+
+    <footer class="site-footer"><a class="brand" href="#top"><strong>MATERIA</strong><sup>01</sup></a><div><a href="#collection">Shop</a><a href="#method">Method</a><a href="#formula">Formula index</a></div><div><a href="#">Instagram</a><a href="mailto:studio@materia01.be">Email</a><a href="../index.html">Studio S. portfolio ↗</a></div><p>Concept project / © <span data-year></span></p></footer>
+
+    <dialog class="product-dialog"><button class="dialog-close" type="button" aria-label="Close product details">×</button><div class="dialog-visual"><img src="assets/materia-collection.webp" alt="" /><span data-dialog-number>/01</span></div><div class="dialog-copy"><span data-dialog-family>Treat / Object 01</span><h2 data-dialog-title>Barrier Serum 01</h2><p data-dialog-desc>A concentrated daily serum for stressed, dehydrated and reactive skin.</p><ul data-dialog-ingredients><li>Ectoin 2%</li><li>Beta-glucan</li><li>Ceramide NP</li></ul><div class="size-options" role="group" aria-label="Choose size"><button class="is-active" type="button" data-size="full">30 ml <span data-dialog-price>€58</span></button><button type="button" data-size="sample">5 ml <span>€14</span></button></div><button class="dialog-add" type="button">Add to cart <span>→</span></button></div></dialog>
+
+    <div class="drawer-backdrop" data-close-cart></div>
+    <aside class="cart-drawer" aria-label="Shopping cart" aria-hidden="true"><header><span>Your edit / <b data-cart-count>0</b></span><button type="button" data-close-cart>Close ×</button></header><div class="cart-items"><div class="cart-empty"><b>0</b><p>No objects selected.</p><a href="#collection" data-close-cart>Enter the collection →</a></div></div><footer><div><span>Subtotal</span><strong data-subtotal>€0</strong></div><p>Complimentary delivery in Belgium over €80.</p><button type="button">Proceed to checkout <span>→</span></button></footer></aside>
+    <script src="script.js"></script>
+  </body>
+</html>
