@@ -32,6 +32,7 @@ button { font: inherit; }
 .site-nav a { position: relative; }
 .site-nav a::after { content: ""; position: absolute; left: 0; right: 100%; bottom: -.5rem; height: 1px; background: var(--bronze); transition: right .3s; }
 .site-nav a:hover::after { right: 0; }
+.nav-enquire { display: none; }
 .header-contact { justify-self: end; border-bottom: 1px solid var(--ivory); padding-bottom: .35rem; }
 .header-contact span { color: var(--bronze); }
 .menu-toggle { display: none; background: none; color: inherit; border: 0; font: 400 .6rem var(--mono); text-transform: uppercase; }
@@ -65,6 +66,10 @@ button { font: inherit; }
 .manifesto h2, .services h2, .about h2 { margin: 0; font: 400 clamp(4rem,8.5vw,9rem)/.88 var(--display); letter-spacing: -.045em; }
 .manifesto h2 em, .services h2 em { color: var(--bronze); font-weight: 400; }
 .manifesto-grid > p { max-width: 28rem; margin: 0 0 .6rem; font: 300 .78rem/1.9 var(--sans); color: #c1bdb4; }
+
+.work-disclosure { padding: 2rem var(--gutter); display: grid; grid-template-columns: .7fr 1.3fr; gap: clamp(2rem,8vw,10rem); align-items: start; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: var(--black-soft); }
+.work-disclosure span { font: 400 .52rem var(--mono); text-transform: uppercase; letter-spacing: .13em; color: var(--bronze); }
+.work-disclosure p { max-width: 48rem; margin: 0; font: 300 .68rem/1.75 var(--sans); color: #bcb8af; }
 
 .film-project { min-height: 110svh; position: relative; isolation: isolate; overflow: hidden; padding: clamp(7rem,10vw,10rem) var(--gutter) 3rem; display: grid; grid-template-rows: auto 1fr auto; }
 .project-bg { position: absolute; z-index: -3; inset: 0; }
@@ -334,12 +339,34 @@ button { font: inherit; }
 
 .contact { min-height: 100svh; padding: clamp(6rem,9vw,9rem) var(--gutter) 3rem; position: relative; overflow: hidden; display: grid; grid-template-rows: auto 1fr auto; background: var(--black); }
 .contact-light { position: absolute; width: 65vw; height: 65vw; border-radius: 50%; background: radial-gradient(circle,rgba(183,121,79,.25),rgba(183,121,79,.06) 34%,transparent 68%); left: 50%; top: 45%; transform: translate(-50%,-50%); pointer-events: none; }
-.contact-content { align-self: center; text-align: center; position: relative; z-index: 1; }
+.contact-layout { position: relative; z-index: 1; display: grid; grid-template-columns: minmax(0,1.05fr) minmax(360px,.95fr); gap: clamp(4rem,8vw,9rem); align-items: center; padding: clamp(5rem,9vw,9rem) 0; }
+.contact-content { align-self: center; text-align: left; position: relative; z-index: 1; }
 .contact-content > p { font: 400 .56rem var(--mono); text-transform: uppercase; letter-spacing: .15em; }
-.contact h2 { margin: 2.5rem 0; font: 400 clamp(5rem,12vw,12rem)/.78 var(--display); letter-spacing: -.055em; }
+.contact h2 { margin: 2.5rem 0; font: 400 clamp(4.5rem,8vw,8.2rem)/.82 var(--display); letter-spacing: -.055em; }
 .contact h2 em { color: var(--bronze); font-weight: 400; }
 .contact-email { display: inline-block; font: 400 clamp(1rem,1.6vw,1.45rem) var(--display); text-underline-offset: .45rem; }
 .contact-email span { color: var(--bronze); }
+.contact-availability { display: flex; align-items: center; gap: .65rem; margin-top: 1.6rem; color: var(--smoke); }
+.contact-availability i { width: .48rem; height: .48rem; border-radius: 50%; background: #6d995d; box-shadow: 0 0 0 .28rem rgba(109,153,93,.1); }
+.enquiry-form { border: 1px solid var(--line); padding: clamp(1.5rem,3vw,2.7rem); background: rgba(17,17,15,.72); backdrop-filter: blur(12px); }
+.enquiry-heading { display: grid; grid-template-columns: .6fr 1.4fr; gap: 2rem; padding-bottom: 1.6rem; border-bottom: 1px solid var(--line); }
+.enquiry-heading span, .enquiry-form label > span { font: 400 .48rem var(--mono); text-transform: uppercase; letter-spacing: .1em; }
+.enquiry-heading span { color: var(--bronze); }
+.enquiry-heading p { margin: 0; font: 300 .62rem/1.7 var(--sans); color: #aaa69d; }
+.enquiry-fields { display: grid; grid-template-columns: 1fr 1fr; gap: 1.6rem 1.4rem; padding: 2rem 0; }
+.enquiry-form label { display: flex; flex-direction: column; gap: .75rem; }
+.enquiry-form label > span { color: #aaa69d; }
+.enquiry-form input, .enquiry-form select, .enquiry-form textarea { width: 100%; min-width: 0; border: 0; border-bottom: 1px solid rgba(233,228,216,.3); border-radius: 0; padding: .2rem 0 .7rem; background: transparent; color: var(--ivory); font: 300 .72rem/1.5 var(--sans); appearance: none; }
+.enquiry-form select { cursor: pointer; background-image: linear-gradient(45deg,transparent 50%,var(--bronze) 50%),linear-gradient(135deg,var(--bronze) 50%,transparent 50%); background-position: calc(100% - 6px) calc(50% - 2px),100% calc(50% - 2px); background-size: 6px 6px,6px 6px; background-repeat: no-repeat; padding-right: 1.2rem; }
+.enquiry-form select option { background: var(--black); color: var(--ivory); }
+.enquiry-form textarea { min-height: 7rem; resize: vertical; }
+.enquiry-form textarea::placeholder { color: #6f6b64; }
+.enquiry-form input:focus, .enquiry-form select:focus, .enquiry-form textarea:focus { outline: 0; border-color: var(--bronze); }
+.enquiry-message { grid-column: 1 / -1; }
+.enquiry-submit { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; padding-top: 1.5rem; border-top: 1px solid var(--line); }
+.enquiry-submit button { border: 1px solid var(--bronze); padding: .9rem 1.1rem; background: var(--bronze); color: var(--black); cursor: pointer; font: 500 .52rem var(--mono); text-transform: uppercase; letter-spacing: .08em; transition: background .25s,color .25s; }
+.enquiry-submit button:hover { background: transparent; color: var(--ivory); }
+.enquiry-submit p { max-width: 12rem; margin: 0; text-align: right; font: 300 .54rem/1.55 var(--sans); color: var(--smoke); }
 .contact-footer { display: grid; grid-template-columns: 1fr 1fr auto; border-top: 1px solid var(--line); padding-top: 1rem; font: 400 .5rem var(--mono); text-transform: uppercase; color: var(--smoke); }
 .contact-footer span:nth-child(2) { text-align: center; }
 
@@ -364,6 +391,8 @@ button { font: inherit; }
   .site-nav { display: none; position: fixed; inset: 74px 0 0; width: 100vw; background: var(--black); flex-direction: column; align-items: center; justify-content: center; gap: 2rem; }
   .site-nav.is-open { display: flex; }
   .site-nav a { font: 400 3rem var(--display); text-transform: none; letter-spacing: 0; }
+  .site-nav .nav-enquire { display: block; margin-top: 1rem; padding: .8rem 1.15rem; border: 1px solid var(--bronze); color: var(--bronze); font: 400 .6rem var(--mono); text-transform: uppercase; letter-spacing: .1em; }
+  .site-nav .nav-enquire::after { display: none; }
   body.nav-open { overflow: hidden; }
   .hero { padding-top: 100px; }
   .hero-stills { grid-template-columns: 1fr .35fr; }
@@ -420,6 +449,8 @@ button { font: inherit; }
   .about-grid { grid-template-columns: 1fr; }
   .about-portrait { position: relative; top: auto; width: 62%; }
   .about-copy { width: min(100%,48rem); margin-left: auto; }
+  .contact-layout { grid-template-columns: 1fr; gap: 5rem; }
+  .contact-content { max-width: 42rem; }
   .site-footer { grid-template-columns: 1fr 1fr; }
 }
 
@@ -538,7 +569,16 @@ button { font: inherit; }
   .about-meta { grid-template-columns: 1fr; gap: 1.5rem; }
   .about-statement { padding: 3rem 1.5rem; }
   .about-statement p { font-size: 11vw; }
-  .contact h2 { font-size: 22vw; }
+  .work-disclosure { grid-template-columns: 1fr; gap: 1rem; }
+  .contact-layout { padding: 5rem 0; }
+  .contact h2 { font-size: 18vw; }
+  .contact-email { overflow-wrap: anywhere; }
+  .enquiry-form { padding: 1.3rem; }
+  .enquiry-heading, .enquiry-fields { grid-template-columns: 1fr; }
+  .enquiry-heading { gap: .9rem; }
+  .enquiry-message { grid-column: 1; }
+  .enquiry-submit { align-items: flex-start; flex-direction: column; }
+  .enquiry-submit p { max-width: none; text-align: left; }
   .contact-footer { grid-template-columns: 1fr; gap: .7rem; }
   .contact-footer span:nth-child(2) { text-align: left; }
   .site-footer { grid-template-columns: 1fr; min-height: 380px; }
