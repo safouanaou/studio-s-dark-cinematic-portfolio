@@ -8,8 +8,9 @@ A responsive design portfolio for an independent digital designer serving distin
 - **KINU** — an ultra-minimal Japanese restaurant website
 - **Maison Éloise** — a classic European property-rental landing page
 - **Maison Dentaire** — a calm-clinical dental practice landing page
+- **SILLAGE Nº7** — an archival niche-fragrance e-commerce experience
 
-The portfolio includes detailed process case studies for FOS and KINU, and all four concepts are complete, working websites inside this repository.
+The portfolio includes detailed process case studies for FOS and KINU, and all five concepts are complete, working websites inside this repository.
 
 It also includes a complete brand-collateral library for FOS and KINU: print-ready menus, two-sided business cards, digital menu boards, and portrait campaign assets. The PDFs are downloadable directly from the portfolio.
 
@@ -45,6 +46,7 @@ Then open `http://localhost:8080`.
 ├── kinu/            # KINU restaurant case study
 ├── residence/       # Maison Éloise rental case study
 ├── dentist/         # Maison Dentaire dental-practice landing page
+├── sillage/         # SILLAGE Nº7 fragrance e-commerce experience
 ├── collateral/      # Editable FOS and KINU digital collateral
 ├── output/pdf/      # Print-ready menus and business cards
 └── assets/          # Optimized portfolio imagery
