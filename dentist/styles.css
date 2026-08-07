@@ -79,7 +79,7 @@ footer { display: grid; grid-template-columns: 1.4fr 1fr 1fr auto; align-items: 
 :focus-visible { outline: 2px solid #bd8c55; outline-offset: 4px; }
 
 @media (max-width: 900px) {
-  .site-header { height: 76px; padding: 0 5vw; }.site-header nav, .site-header > .button { display: none; }.menu-toggle { display: grid; width: 42px; height: 42px; place-content: center; gap: 6px; border: 1px solid var(--line); background: transparent; }.menu-toggle span { display: block; width: 18px; border-top: 1px solid; }.site-header.menu-open { position: fixed; background: var(--paper); height: auto; min-height: 76px; flex-wrap: wrap; }.site-header.menu-open nav { display: flex; order: 3; width: 100%; flex-direction: column; padding: 2rem 0; margin: 0; }
+  body.nav-open { overflow: hidden; }.site-header { height: 76px; padding: 0 5vw; }.site-header nav, .site-header > .button { display: none; }.menu-toggle { display: grid; width: 44px; height: 44px; place-content: center; gap: 6px; border: 1px solid var(--line); background: transparent; }.menu-toggle span { display: block; width: 18px; border-top: 1px solid; }.site-header.menu-open { position: fixed; background: var(--paper); height: auto; min-height: 76px; flex-wrap: wrap; }.site-header.menu-open nav { display: flex; order: 3; width: 100%; flex-direction: column; padding: 2rem 0; margin: 0; }
   .hero { grid-template-columns: 1fr; padding: 125px 5vw 70px; gap: 4rem; }.hero-copy { padding: 0; }.hero-visual { width: 88%; justify-self: end; }.image-frame img { height: 600px; }
   .principles { padding: 1.5rem 5vw; grid-template-columns: 1fr; }.principles div { border-right: 0; border-bottom: 1px solid var(--line); padding: 1rem 0; }.principles div:last-child { border-bottom: 0; }
   .section { padding: 6.5rem 5vw; }.section-heading { grid-template-columns: 1fr; gap: 1rem; }.section-heading > p:last-child { max-width: 500px; }.doctor, .booking { grid-template-columns: 1fr; gap: 4rem; }
@@ -94,3 +94,5 @@ footer { display: grid; grid-template-columns: 1.4fr 1fr 1fr auto; align-items: 
 }
 
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; } .reveal { opacity: 1; transform: none; } }
+
+.trust-row small,.principles p{color:#55645f}.service-list small,.testimonial p span,.section-heading>p:last-child{color:#52635e}

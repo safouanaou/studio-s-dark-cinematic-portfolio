@@ -10,14 +10,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Italiana&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet" />
     <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="styles.css" />
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css?v=20260807-2" />
+    <script src="script.js?v=20260807" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
     <div class="opening" aria-hidden="true"><span>SILLAGE Nº7</span><i></i><small>Opening the archive</small></div>
-    <div class="grain" aria-hidden="true"></div>
-
     <div class="announcement"><p>Complimentary discovery set with orders over €180</p><button type="button" aria-label="Dismiss announcement">×</button></div>
     <header class="site-header">
       <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav"><span>Menu</span><i></i></button>
@@ -56,7 +54,7 @@
 
         <div class="filter-bar reveal" aria-label="Filter fragrances">
           <span>Filter by family</span>
-          <div><button class="active" data-filter="all" type="button">All <sup>04</sup></button><button data-filter="mineral" type="button">Mineral <sup>01</sup></button><button data-filter="resin" type="button">Resinous <sup>02</sup></button><button data-filter="paper" type="button">Dry woods <sup>01</sup></button></div>
+          <div><button class="active" data-filter="all" type="button" aria-pressed="true">All <sup>04</sup></button><button data-filter="mineral" type="button" aria-pressed="false">Mineral <sup>01</sup></button><button data-filter="resin" type="button" aria-pressed="false">Resinous <sup>02</sup></button><button data-filter="paper" type="button" aria-pressed="false">Dry woods <sup>01</sup></button></div>
         </div>
 
         <div class="product-grid">
@@ -64,25 +62,25 @@
             <button class="product-image" type="button" aria-label="View Rain on Stone details"><img src="assets/rain-on-stone.webp" alt="Rain on Stone perfume" loading="lazy" width="1122" height="1402" /><span>Inspect dossier</span></button>
             <div class="product-index"><span>Nº 01</span><span>Aquatic / Mineral</span></div>
             <h3>Rain on Stone</h3><p>Petrichor · Black tea · Vetiver</p>
-            <footer><span>50 ml · Extrait</span><strong>€195</strong><button class="quick-add" type="button">Add <i>＋</i></button></footer>
+            <footer><span>50 ml · Extrait</span><strong>€195</strong><button class="quick-add" type="button" aria-label="Add Rain on Stone to cart">Add <i>＋</i></button></footer>
           </article>
           <article class="product-card reveal" data-family="resin" data-id="lantern" data-name="Lantern in the Fog" data-price="210" data-image="assets/lantern-in-fog.webp">
             <button class="product-image" type="button" aria-label="View Lantern in the Fog details"><img src="assets/lantern-in-fog.webp" alt="Lantern in the Fog perfume" loading="lazy" width="1122" height="1402" /><span>Inspect dossier</span></button>
             <div class="product-index"><span>Nº 02</span><span>Resinous / Amber</span></div>
             <h3>Lantern in the Fog</h3><p>Olibanum · Black pepper · Amber</p>
-            <footer><span>50 ml · Extrait</span><strong>€210</strong><button class="quick-add" type="button">Add <i>＋</i></button></footer>
+            <footer><span>50 ml · Extrait</span><strong>€210</strong><button class="quick-add" type="button" aria-label="Add Lantern in the Fog to cart">Add <i>＋</i></button></footer>
           </article>
           <article class="product-card reveal" data-family="paper" data-id="paper" data-name="Paper Binding" data-price="185" data-image="assets/paper-binding.webp">
             <button class="product-image" type="button" aria-label="View Paper Binding details"><img src="assets/paper-binding.webp" alt="Paper Binding perfume" loading="lazy" width="1122" height="1402" /><span>Inspect dossier</span></button>
             <div class="product-index"><span>Nº 03</span><span>Dry woods / Leather</span></div>
             <h3>Paper Binding</h3><p>Orris · Ink · Cedar shaving</p>
-            <footer><span>50 ml · Extrait</span><strong>€185</strong><button class="quick-add" type="button">Add <i>＋</i></button></footer>
+            <footer><span>50 ml · Extrait</span><strong>€185</strong><button class="quick-add" type="button" aria-label="Add Paper Binding to cart">Add <i>＋</i></button></footer>
           </article>
           <article class="product-card product-discovery reveal" data-family="resin" data-id="discovery" data-name="Archive Discovery Set" data-price="48" data-image="assets/rain-on-stone.webp">
             <div class="discovery-graphic" aria-hidden="true"><span>01</span><span>02</span><span>03</span><i>S7</i></div>
             <div class="product-index"><span>Study set</span><span>3 × 2 ml</span></div>
             <h3>Archive Discovery Set</h3><p>Three studies, selected by you</p>
-            <footer><span>Redeemable with 50 ml</span><strong>€48</strong><button class="quick-add" type="button">Add <i>＋</i></button></footer>
+            <footer><span>Redeemable with 50 ml</span><strong>€48</strong><button class="quick-add" type="button" aria-label="Add Archive Discovery Set to cart">Add <i>＋</i></button></footer>
           </article>
         </div>
       </section>
@@ -92,9 +90,9 @@
         <div class="index-layout">
           <div class="index-copy reveal"><p class="micro">An index of materials</p><h2>What do you want<br />to <em>remember?</em></h2><p>Select an impression. The archive will locate your closest study.</p></div>
           <div class="index-controls reveal" role="list" aria-label="Scent impressions">
-            <button class="active" data-scent="mineral" type="button"><span>01</span>Cold air<i>↗</i></button>
-            <button data-scent="resin" type="button"><span>02</span>Warming resin<i>↗</i></button>
-            <button data-scent="paper" type="button"><span>03</span>Old paper<i>↗</i></button>
+            <button class="active" data-scent="mineral" type="button" aria-pressed="true"><span>01</span>Cold air<i>↗</i></button>
+            <button data-scent="resin" type="button" aria-pressed="false"><span>02</span>Warming resin<i>↗</i></button>
+            <button data-scent="paper" type="button" aria-pressed="false"><span>03</span>Old paper<i>↗</i></button>
           </div>
           <article class="index-result reveal" aria-live="polite"><span class="result-number">Nº 01</span><div class="result-orbit" aria-hidden="true"><i></i><b></b></div><div><p class="result-family">Aquatic / Mineral</p><h3 class="result-name">Rain on Stone</h3><p class="result-notes">Petrichor, black tea, violet leaf, vetiver and wet cedar.</p><button class="result-add" type="button">Add study to cart · €195</button></div></article>
         </div>
@@ -105,10 +103,10 @@
         <div class="discovery-layout">
           <div class="discovery-copy reveal"><p class="micro">A portable archive</p><h2>Choose three<br /><em>observations.</em></h2><p>Compose a personal set of 2 ml studies. The €48 price is redeemable against a full bottle within 30 days.</p><div class="selection-count"><span data-selection-count>0</span><small>/ 3 selected</small></div></div>
           <div class="sample-list reveal">
-            <button type="button" data-sample="Rain on Stone"><span>01</span><div><strong>Rain on Stone</strong><small>Petrichor · Tea · Vetiver</small></div><i>＋</i></button>
-            <button type="button" data-sample="Lantern in the Fog"><span>02</span><div><strong>Lantern in the Fog</strong><small>Resin · Pepper · Amber</small></div><i>＋</i></button>
-            <button type="button" data-sample="Paper Binding"><span>03</span><div><strong>Paper Binding</strong><small>Orris · Ink · Cedar</small></div><i>＋</i></button>
-            <button type="button" data-sample="Ember & Vetiver"><span>04</span><div><strong>Ember & Vetiver</strong><small>Clove · Smoke · Root</small></div><i>＋</i></button>
+            <button type="button" data-sample="Rain on Stone" aria-pressed="false"><span>01</span><div><strong>Rain on Stone</strong><small>Petrichor · Tea · Vetiver</small></div><i>＋</i></button>
+            <button type="button" data-sample="Lantern in the Fog" aria-pressed="false"><span>02</span><div><strong>Lantern in the Fog</strong><small>Resin · Pepper · Amber</small></div><i>＋</i></button>
+            <button type="button" data-sample="Paper Binding" aria-pressed="false"><span>03</span><div><strong>Paper Binding</strong><small>Orris · Ink · Cedar</small></div><i>＋</i></button>
+            <button type="button" data-sample="Ember & Vetiver" aria-pressed="false"><span>04</span><div><strong>Ember & Vetiver</strong><small>Clove · Smoke · Root</small></div><i>＋</i></button>
             <button class="build-set" type="button" disabled>Add discovery set · €48 <span>→</span></button>
           </div>
         </div>
@@ -134,8 +132,8 @@
     <footer class="site-footer"><a class="wordmark" href="#top">SILLAGE <span>Nº7</span><small>Brussels</small></a><p>Independent fragrance house<br />Brussels · Belgium</p><nav aria-label="Footer"><a href="#collection">Shop</a><a href="#house">The house</a><a href="#journal">Journal</a></nav><p>Concept project<br />© 2026 SILLAGE Nº7</p></footer>
 
     <div class="scrim" hidden></div>
-    <aside class="cart" id="cart" aria-hidden="true" aria-labelledby="cart-title"><header><p id="cart-title">Your archive <span data-cart-count>0</span></p><button class="close-cart" type="button" aria-label="Close cart">×</button></header><div class="cart-items"><div class="empty-cart"><span>∅</span><p>Your archive is empty.</p><a href="#collection">Explore the collection</a></div></div><footer><div><span>Subtotal</span><strong data-subtotal>€0</strong></div><button type="button">Proceed to checkout <span>→</span></button><small>Complimentary shipping over €150</small></footer></aside>
+    <aside class="cart" id="cart" aria-hidden="true" aria-labelledby="cart-title" inert><header><p id="cart-title">Your archive <span data-cart-count>0</span></p><button class="close-cart" type="button" aria-label="Close cart">×</button></header><div class="cart-items"><div class="empty-cart"><span>∅</span><p>Your archive is empty.</p><a href="#collection">Explore the collection</a></div></div><footer><div><span>Subtotal</span><strong data-subtotal>€0</strong></div><button type="button" data-checkout>Preview checkout <span>→</span></button><p class="checkout-status" data-checkout-status role="status"></p><small>Concept store · no payment will be taken</small></footer></aside>
 
-    <dialog class="product-dialog"><button class="close-dialog" type="button" aria-label="Close product details">×</button><div class="dialog-image"><img src="assets/rain-on-stone.webp" alt="" /></div><div class="dialog-copy"><p class="micro">Fragrance dossier <span class="dialog-number">Nº 01</span></p><h2 class="dialog-name">Rain on Stone</h2><p class="dialog-description">Wet limestone after summer rain. Black tea and violet leaf settle into a mineral trace of vetiver and cedar.</p><dl><div><dt>Top</dt><dd class="dialog-top">Petrichor · Bergamot</dd></div><div><dt>Heart</dt><dd class="dialog-heart">Black tea · Violet leaf</dd></div><div><dt>Base</dt><dd class="dialog-base">Vetiver · Cedarwood</dd></div></dl><fieldset><legend>Select size</legend><label><input type="radio" name="size" value="50 ml" checked /><span>50 ml</span><strong class="dialog-price">€195</strong></label><label><input type="radio" name="size" value="2 ml" /><span>2 ml sample</span><strong>€12</strong></label></fieldset><button class="dialog-add" type="button">Add to archive <span>→</span></button></div></dialog>
+    <dialog class="product-dialog"><button class="close-dialog" type="button" aria-label="Close product details">×</button><div class="dialog-image"><img src="assets/rain-on-stone.webp" alt="" /></div><div class="dialog-copy"><p class="micro">Fragrance dossier <span class="dialog-number">Nº 01</span></p><h2 class="dialog-name">Rain on Stone</h2><p class="dialog-description">Wet limestone after summer rain. Black tea and violet leaf settle into a mineral trace of vetiver and cedar.</p><dl><div><dt>Top</dt><dd class="dialog-top">Petrichor · Bergamot</dd></div><div><dt>Heart</dt><dd class="dialog-heart">Black tea · Violet leaf</dd></div><div><dt>Base</dt><dd class="dialog-base">Vetiver · Cedarwood</dd></div></dl><fieldset><legend>Select size</legend><label><input type="radio" name="size" value="50 ml" checked /><span>50 ml</span><strong class="dialog-price">€195</strong></label><label><input type="radio" name="size" value="2 ml sample" /><span>2 ml sample</span><strong>€12</strong></label></fieldset><button class="dialog-add" type="button">Add to archive <span>→</span></button></div></dialog>
   </body>
 </html>

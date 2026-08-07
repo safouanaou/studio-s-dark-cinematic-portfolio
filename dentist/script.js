@@ -1,17 +1,30 @@
 const header = document.querySelector('.site-header');
 const menuButton = document.querySelector('.menu-toggle');
 
+function closeMenu({ restoreFocus = false } = {}) {
+  const wasOpen = header.classList.contains('menu-open');
+  header.classList.remove('menu-open');
+  document.body.classList.remove('nav-open');
+  menuButton.setAttribute('aria-expanded', 'false');
+  menuButton.setAttribute('aria-label', 'Open menu');
+  if (restoreFocus && wasOpen) menuButton.focus();
+}
+
 menuButton.addEventListener('click', () => {
   const open = header.classList.toggle('menu-open');
+  document.body.classList.toggle('nav-open', open);
   menuButton.setAttribute('aria-expanded', String(open));
   menuButton.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
 });
 
 document.querySelectorAll('nav a').forEach((link) => {
   link.addEventListener('click', () => {
-    header.classList.remove('menu-open');
-    menuButton.setAttribute('aria-expanded', 'false');
+    closeMenu();
   });
+});
+
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape') closeMenu({ restoreFocus: true });
 });
 
 const testimonials = [
@@ -37,8 +50,21 @@ document.querySelector('.next').addEventListener('click', () => showStory(storyI
 document.querySelector('.booking-form').addEventListener('submit', (event) => {
   event.preventDefault();
   const form = event.currentTarget;
-  form.querySelector('.form-status').textContent = 'Thank you — we’ll be in touch within one working day.';
+  if (!form.reportValidity()) return;
+  const data = new FormData(form);
+  const subject = `Portfolio demo — Maison Dentaire appointment for ${data.get('name')}`;
+  const body = [
+    'Maison Dentaire concept appointment request',
+    `Name: ${data.get('name')}`,
+    `Email: ${data.get('email')}`,
+    `Phone: ${data.get('phone') || 'Not provided'}`,
+    `Service: ${data.get('service')}`,
+    '',
+    'This request came from the Studio S. portfolio concept.'
+  ].join('\n');
+  form.querySelector('.form-status').textContent = 'Your email app is opening. Nothing is sent until you review the draft and press send.';
   form.reset();
+  window.location.href = `mailto:aouezgharsafouan@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 });
 
 const observer = new IntersectionObserver((entries) => {

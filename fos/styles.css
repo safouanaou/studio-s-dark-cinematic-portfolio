@@ -210,3 +210,8 @@ button, a { -webkit-tap-highlight-color: transparent; }
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
   .reveal { opacity: 1; transform: none; }
 }
+
+@media (max-width: 900px) {
+  .menu-toggle { min-width: 44px; min-height: 44px; justify-content: center; padding: .65rem; }
+  .site-nav a { min-height: 44px; display: flex; align-items: center; }
+}

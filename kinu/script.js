@@ -44,9 +44,22 @@ dialog?.addEventListener('click', (event) => {
 form?.addEventListener('submit', (event) => {
   event.preventDefault();
   if (!form.reportValidity()) return;
+  const data = new FormData(form);
+  const subject = `Portfolio demo — KINU reservation for ${data.get('name')}`;
+  const body = [
+    'KINU concept reservation',
+    `Date: ${data.get('date')}`,
+    `Time: ${data.get('time')}`,
+    `Guests: ${data.get('guests')}`,
+    `Name: ${data.get('name')}`,
+    `Email: ${data.get('email')}`,
+    '',
+    'This request came from the Studio S. portfolio concept.'
+  ].join('\n');
   form.hidden = true;
   success.hidden = false;
   success.querySelector('button').focus();
+  window.location.href = `mailto:aouezgharsafouan@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 });
 
 const dateInput = document.querySelector('input[type="date"]');
@@ -54,7 +67,7 @@ if (dateInput) {
   const today = new Date();
   const max = new Date(today);
   max.setDate(today.getDate() + 56);
-  const format = (date) => date.toISOString().split('T')[0];
+  const format = (date) => [date.getFullYear(), String(date.getMonth() + 1).padStart(2, '0'), String(date.getDate()).padStart(2, '0')].join('-');
   dateInput.min = format(today);
   dateInput.max = format(max);
 }
