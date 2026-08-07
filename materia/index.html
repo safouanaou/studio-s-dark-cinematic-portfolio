@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Mono:wght@300;400;500&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css?v=20260807" />
     <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
   </head>
   <body>
@@ -22,7 +22,7 @@
       <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
         <a href="#collection">Shop</a><a href="#method">Method</a><a href="#formula">Formula index</a><a href="#studio">Atelier</a>
       </nav>
-      <button class="cart-trigger" type="button" data-open-cart>Cart <span data-cart-count>0</span></button>
+      <button class="cart-trigger" type="button" data-open-cart aria-controls="cart-drawer" aria-expanded="false">Cart <span data-cart-count>0</span></button>
       <button class="menu-trigger" type="button" aria-expanded="false" aria-controls="site-nav"><span>Menu</span><i></i></button>
     </header>
 
@@ -48,23 +48,23 @@
 
       <section class="collection section" id="collection" aria-labelledby="collection-title">
         <header class="section-head reveal"><div><span>Edition 01</span><span>Four working objects</span></div><h2 id="collection-title">The daily<br />instruments.</h2><p>Each formula has one job. Layer them, separate them, use only what the day asks for.</p></header>
-        <div class="filter-row reveal" role="group" aria-label="Filter products"><button class="is-active" type="button" data-filter="all">All / 04</button><button type="button" data-filter="cleanse">Cleanse</button><button type="button" data-filter="treat">Treat</button><button type="button" data-filter="seal">Seal</button></div>
+        <div class="filter-row reveal" role="group" aria-label="Filter products"><button class="is-active" type="button" data-filter="all" aria-pressed="true">All / 04</button><button type="button" data-filter="cleanse" aria-pressed="false">Cleanse</button><button type="button" data-filter="treat" aria-pressed="false">Treat</button><button type="button" data-filter="seal" aria-pressed="false">Seal</button></div>
         <div class="product-grid">
           <article class="product reveal" data-family="treat" data-product="barrier-serum">
             <button class="product-image" type="button" aria-label="View Barrier Serum 01"><img src="assets/materia-collection.webp" alt="Brushed-aluminium skincare serum bottle" loading="lazy" /><span class="product-number">/01</span><span class="product-state">Bestseller</span></button>
-            <div class="product-info"><div><h3>Barrier Serum 01</h3><p>Ectoin · Beta-glucan · Ceramides</p></div><strong>€58</strong></div><button class="quick-add" type="button">Quick add <span>+</span></button>
+            <div class="product-info"><div><h3>Barrier Serum 01</h3><p>Ectoin · Beta-glucan · Ceramides</p></div><strong>€58</strong></div><button class="quick-add" type="button" aria-label="Quick add Barrier Serum 01 to cart">Quick add <span>+</span></button>
           </article>
           <article class="product reveal" data-family="cleanse" data-product="mineral-cleanse">
             <button class="product-image crop-tube" type="button" aria-label="View Mineral Cleanse 02"><img src="assets/materia-collection.webp" alt="White aluminium skincare cleansing tube" loading="lazy" /><span class="product-number">/02</span></button>
-            <div class="product-info"><div><h3>Mineral Cleanse 02</h3><p>Amino acids · Kaolin · Glycerin</p></div><strong>€34</strong></div><button class="quick-add" type="button">Quick add <span>+</span></button>
+            <div class="product-info"><div><h3>Mineral Cleanse 02</h3><p>Amino acids · Kaolin · Glycerin</p></div><strong>€34</strong></div><button class="quick-add" type="button" aria-label="Quick add Mineral Cleanse 02 to cart">Quick add <span>+</span></button>
           </article>
           <article class="product reveal" data-family="seal" data-product="lipid-veil">
             <button class="product-image crop-jar" type="button" aria-label="View Lipid Veil 03"><img src="assets/materia-collection.webp" alt="Chrome skincare moisturiser jar" loading="lazy" /><span class="product-number">/03</span><span class="product-state">New object</span></button>
-            <div class="product-info"><div><h3>Lipid Veil 03</h3><p>Squalane · Cholesterol · Oat lipid</p></div><strong>€52</strong></div><button class="quick-add" type="button">Quick add <span>+</span></button>
+            <div class="product-info"><div><h3>Lipid Veil 03</h3><p>Squalane · Cholesterol · Oat lipid</p></div><strong>€52</strong></div><button class="quick-add" type="button" aria-label="Quick add Lipid Veil 03 to cart">Quick add <span>+</span></button>
           </article>
           <article class="product product-acid reveal" data-family="treat" data-product="night-shift">
             <button class="product-image" type="button" aria-label="View Night Shift 04"><div class="type-object"><small>ACTIVE FORMULA</small><b>NIGHT<br />SHIFT</b><span>04 / 30ML</span></div><span class="product-number">/04</span></button>
-            <div class="product-info"><div><h3>Night Shift 04</h3><p>Retinal · Peptide · Bisabolol</p></div><strong>€64</strong></div><button class="quick-add" type="button">Quick add <span>+</span></button>
+            <div class="product-info"><div><h3>Night Shift 04</h3><p>Retinal · Peptide · Bisabolol</p></div><strong>€64</strong></div><button class="quick-add" type="button" aria-label="Quick add Night Shift 04 to cart">Quick add <span>+</span></button>
           </article>
         </div>
       </section>
@@ -90,7 +90,7 @@
 
       <section class="finder" aria-labelledby="finder-title">
         <header class="finder-head reveal"><span>Routine generator / Beta</span><h2 id="finder-title">What is your skin<br />doing today?</h2><p>Choose the state that feels closest. We will keep the answer short.</p></header>
-        <div class="state-grid reveal" role="group" aria-label="Choose your current skin state"><button type="button" data-state="tight">Tight / depleted <span>01</span></button><button type="button" data-state="reactive">Reactive / warm <span>02</span></button><button type="button" data-state="congested">Congested / uneven <span>03</span></button><button type="button" data-state="steady">Steady / maintain <span>04</span></button></div>
+        <div class="state-grid reveal" role="group" aria-label="Choose your current skin state"><button type="button" data-state="tight" aria-pressed="false">Tight / depleted <span>01</span></button><button type="button" data-state="reactive" aria-pressed="false">Reactive / warm <span>02</span></button><button type="button" data-state="congested" aria-pressed="false">Congested / uneven <span>03</span></button><button type="button" data-state="steady" aria-pressed="false">Steady / maintain <span>04</span></button></div>
         <div class="finder-result" aria-live="polite"><span>Your two-object edit</span><div><b data-routine-code>— / —</b><h3 data-routine-title>Select a skin state</h3><p data-routine-copy>No ten-step prescription. Two compatible formulas, selected around what your barrier is communicating now.</p></div><button type="button" data-add-routine disabled>Add the edit <span data-routine-price>—</span></button></div>
       </section>
 
@@ -105,10 +105,10 @@
 
     <footer class="site-footer"><a class="brand" href="#top"><strong>MATERIA</strong><sup>01</sup></a><div><a href="#collection">Shop</a><a href="#method">Method</a><a href="#formula">Formula index</a></div><div><a href="#">Instagram</a><a href="mailto:studio@materia01.be">Email</a><a href="../index.html">Studio S. portfolio ↗</a></div><p>Concept project / © <span data-year></span></p></footer>
 
-    <dialog class="product-dialog"><button class="dialog-close" type="button" aria-label="Close product details">×</button><div class="dialog-visual"><img src="assets/materia-collection.webp" alt="" /><span data-dialog-number>/01</span></div><div class="dialog-copy"><span data-dialog-family>Treat / Object 01</span><h2 data-dialog-title>Barrier Serum 01</h2><p data-dialog-desc>A concentrated daily serum for stressed, dehydrated and reactive skin.</p><ul data-dialog-ingredients><li>Ectoin 2%</li><li>Beta-glucan</li><li>Ceramide NP</li></ul><div class="size-options" role="group" aria-label="Choose size"><button class="is-active" type="button" data-size="full">30 ml <span data-dialog-price>€58</span></button><button type="button" data-size="sample">5 ml <span>€14</span></button></div><button class="dialog-add" type="button">Add to cart <span>→</span></button></div></dialog>
+    <dialog class="product-dialog"><button class="dialog-close" type="button" aria-label="Close product details">×</button><div class="dialog-visual"><img src="assets/materia-collection.webp" alt="" /><span data-dialog-number>/01</span></div><div class="dialog-copy"><span data-dialog-family>Treat / Object 01</span><h2 data-dialog-title>Barrier Serum 01</h2><p data-dialog-desc>A concentrated daily serum for stressed, dehydrated and reactive skin.</p><ul data-dialog-ingredients><li>Ectoin 2%</li><li>Beta-glucan</li><li>Ceramide NP</li></ul><div class="size-options" role="group" aria-label="Choose size"><button class="is-active" type="button" data-size="full" aria-pressed="true">30 ml <span data-dialog-price>€58</span></button><button type="button" data-size="sample" aria-pressed="false">5 ml <span>€14</span></button></div><button class="dialog-add" type="button">Add to cart <span>→</span></button></div></dialog>
 
     <div class="drawer-backdrop" data-close-cart></div>
-    <aside class="cart-drawer" aria-label="Shopping cart" aria-hidden="true"><header><span>Your edit / <b data-cart-count>0</b></span><button type="button" data-close-cart>Close ×</button></header><div class="cart-items"><div class="cart-empty"><b>0</b><p>No objects selected.</p><a href="#collection" data-close-cart>Enter the collection →</a></div></div><footer><div><span>Subtotal</span><strong data-subtotal>€0</strong></div><p>Complimentary delivery in Belgium over €80.</p><button type="button">Proceed to checkout <span>→</span></button></footer></aside>
-    <script src="script.js"></script>
+    <aside class="cart-drawer" id="cart-drawer" aria-label="Shopping cart" aria-hidden="true" inert><header><span>Your edit / <b data-cart-count>0</b></span><button type="button" data-close-cart>Close ×</button></header><div class="cart-items"><div class="cart-empty"><b>0</b><p>No objects selected.</p><a href="#collection" data-close-cart>Enter the collection →</a></div></div><footer><div><span>Subtotal</span><strong data-subtotal>€0</strong></div><p>Concept store · no payment will be taken.</p><button type="button" data-checkout>Preview checkout <span>→</span></button><p class="checkout-status" data-checkout-status role="status"></p></footer></aside>
+    <script src="script.js?v=20260807"></script>
   </body>
 </html>

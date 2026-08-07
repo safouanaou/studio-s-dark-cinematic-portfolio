@@ -9,8 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css" />
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css?v=20260807" />
+    <script src="script.js?v=20260807" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -19,13 +19,13 @@
         <svg class="brand-mark" viewBox="0 0 42 42" aria-hidden="true"><path d="M7 12.5C11 6.2 16.4 4 21 4s10 2.2 14 8.5c-1.4 12.7-6.1 21.2-14 25.5C13.1 33.7 8.4 25.2 7 12.5Z"/><path d="M13.5 14.5c4.8 2.7 10.2 2.7 15 0"/></svg>
         <span>Maison<br />Dentaire</span>
       </a>
-      <nav aria-label="Primary navigation">
+      <nav id="site-nav" aria-label="Primary navigation">
         <a href="#care">Our care</a>
         <a href="#doctor">The practice</a>
         <a href="#stories">Patient stories</a>
       </nav>
       <a class="button button-small" href="#booking">Book a visit <span aria-hidden="true">↗</span></a>
-      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
         <span></span><span></span>
       </button>
     </header>

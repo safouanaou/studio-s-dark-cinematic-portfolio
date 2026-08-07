@@ -168,6 +168,8 @@ img { display: block; max-width: 100%; }
   .visit-details { width: min(100%, 600px); margin-left: auto; }
   .site-footer { grid-template-columns: 1fr 1fr; }
   .dialog-content { grid-template-columns: 1fr; gap: 4rem; }
+  .vertical-note { right: 0; }
+  .nav-toggle { min-width: 44px; min-height: 44px; justify-content: center; padding: .65rem; }
 }
 
 @media (max-width: 640px) {

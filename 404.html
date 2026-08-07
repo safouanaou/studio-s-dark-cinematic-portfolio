@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <meta name="theme-color" content="#090908" />
+    <title>Page not found — Studio S.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&amp;family=Italiana&amp;display=swap" rel="stylesheet" />
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+    <style>
+      :root { color-scheme: dark; --black: #090908; --ivory: #e9e4d8; --bronze: #b7794f; --line: rgba(233,228,216,.28); }
+      * { box-sizing: border-box; }
+      body { min-height: 100svh; margin: 0; padding: clamp(1.25rem,4vw,4.5rem); display: grid; grid-template-rows: auto 1fr auto; background: var(--black); color: var(--ivory); font-family: "IBM Plex Mono", monospace; }
+      header, footer { display: flex; justify-content: space-between; gap: 2rem; padding: 1rem 0; border-bottom: 1px solid var(--line); font-size: .65rem; text-transform: uppercase; letter-spacing: .12em; }
+      main { align-self: center; display: grid; grid-template-columns: minmax(0,1fr) auto; gap: 3rem; align-items: end; }
+      h1 { max-width: 900px; margin: 0; font: 400 clamp(4.6rem,14vw,13rem)/.76 "Italiana", serif; letter-spacing: -.055em; }
+      h1 em { color: var(--bronze); font-weight: 400; }
+      a { min-height: 44px; display: inline-flex; align-items: center; gap: 2rem; color: inherit; text-transform: uppercase; font-size: .67rem; text-underline-offset: .5rem; }
+      a span { color: var(--bronze); }
+      footer { border-top: 1px solid var(--line); border-bottom: 0; }
+      @media (max-width: 680px) { main { grid-template-columns: 1fr; align-items: start; } h1 { font-size: 23vw; } }
+    </style>
+  </head>
+  <body>
+    <header><span>Studio S.</span><span>Error / 404</span></header>
+    <main>
+      <h1>Frame not<br /><em>found.</em></h1>
+      <a href="/">Return to the portfolio <span aria-hidden="true">↗</span></a>
+    </main>
+    <footer><span>Ghent · Belgium</span><span>Portfolio MMXXVI</span></footer>
+  </body>
+</html>
