@@ -75,6 +75,7 @@ button { font: inherit; }
 .project-residence .project-bg img { object-position: center; filter: saturate(.46) brightness(.52); }
 .project-dentist .project-bg img { object-position: 50% 36%; filter: saturate(.5) brightness(.52); }
 .project-sillage .project-bg img { object-position: 50% 54%; filter: saturate(.42) brightness(.48) contrast(1.08); }
+.project-materia .project-bg img { object-position: 62% 50%; filter: saturate(.55) brightness(.48) contrast(1.12); }
 .project-vignette { position: absolute; z-index: -2; inset: 0; background: linear-gradient(180deg,rgba(0,0,0,.46),rgba(0,0,0,.06) 36%,rgba(0,0,0,.78)),radial-gradient(circle at 50% 48%,transparent 25%,rgba(0,0,0,.52) 110%); }
 .project-chapter { display: flex; justify-content: space-between; font: 400 .55rem var(--mono); text-transform: uppercase; letter-spacing: .12em; }
 .project-title { align-self: center; text-align: center; }
@@ -84,6 +85,7 @@ button { font: inherit; }
 .project-residence .project-title h3 { font-size: clamp(5rem,14vw,14rem); }
 .project-dentist .project-title h3 { font-size: clamp(4.7rem,12vw,12rem); }
 .project-sillage .project-title h3 { font-size: clamp(5rem,13vw,13rem); letter-spacing: -.045em; }
+.project-materia .project-title h3 { font-size: clamp(4.7rem,11.5vw,11rem); letter-spacing: -.055em; }
 .project-line { width: fit-content; margin: 2rem auto 0; text-align: left; font: 400 clamp(1.1rem,1.8vw,1.7rem)/1.25 var(--display); font-style: italic; }
 .project-bottom { display: grid; grid-template-columns: 1fr .6fr .4fr; gap: 3rem; align-items: end; padding-top: 1.2rem; border-top: 1px solid rgba(233,228,216,.45); }
 .project-bottom > p { max-width: 30rem; margin: 0; font: 300 .68rem/1.75 var(--sans); }
@@ -438,9 +440,11 @@ button { font: inherit; }
   .project-fos .project-bg img { object-position: 59% center; }
   .project-dentist .project-bg img { object-position: 55% 32%; }
   .project-sillage .project-bg img { object-position: 52% 50%; }
+  .project-materia .project-bg img { object-position: 68% 50%; }
   .project-title h3 { font-size: 33vw; }
   .project-dentist .project-title h3 { font-size: 20vw; }
   .project-sillage .project-title h3 { font-size: 20vw; }
+  .project-materia .project-title h3 { font-size: 18vw; }
   .project-line { font-size: 1.1rem; }
   .project-bottom { grid-template-columns: 1fr; gap: 1.5rem; }
   .project-links { justify-self: start; align-items: flex-start; }
