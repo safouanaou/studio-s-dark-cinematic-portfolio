@@ -11,7 +11,7 @@ A responsive design portfolio for an independent digital designer serving distin
 - **SILLAGE Nº7** — an archival niche-fragrance e-commerce experience
 - **MATERIA 01** — an avant-garde skincare atelier and e-commerce experience
 
-The portfolio includes detailed process case studies for FOS and KINU, and all six concepts are complete, working websites inside this repository.
+The portfolio includes detailed process case studies for FOS, KINU and SILLAGE Nº7, and all six concepts are complete, working websites inside this repository.
 
 It also includes a complete brand-collateral library for FOS and KINU: print-ready menus, two-sided business cards, digital menu boards, and portrait campaign assets. The PDFs are downloadable directly from the portfolio.
 
