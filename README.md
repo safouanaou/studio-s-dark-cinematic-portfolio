@@ -1,6 +1,6 @@
 # Studio S. — Dark Cinematic Portfolio
 
-A responsive design portfolio for an independent digital designer serving distinctive local businesses and places.
+A responsive client-acquisition portfolio for an independent design practice serving distinctive local businesses and places.
 
 ## Included projects
 
@@ -11,7 +11,9 @@ A responsive design portfolio for an independent digital designer serving distin
 - **SILLAGE Nº7** — an archival niche-fragrance e-commerce experience
 - **MATERIA 01** — an avant-garde skincare atelier and e-commerce experience
 
-The portfolio includes detailed process case studies for FOS, KINU and SILLAGE Nº7, and all six concepts are complete, working websites inside this repository.
+The focused homepage features FOS, KINU and SILLAGE Nº7. The complete work archive preserves all six concepts, which remain complete working websites inside this repository.
+
+Detailed case studies for FOS, KINU and SILLAGE Nº7 now live on a dedicated case-studies page, while the complete packages, optional additions, process and project terms live on a dedicated services-and-terms page.
 
 It also includes a complete brand-collateral library for FOS and KINU: print-ready menus, two-sided business cards, digital menu boards, and portrait campaign assets. The PDFs are downloadable directly from the portfolio.
 
@@ -34,15 +36,18 @@ Then open `http://localhost:8080`.
 ## Before publishing professionally
 
 - The profile identifies Safouan Aouezghar and lists English, French and Arabic.
-- Project enquiries are directed to `aouezgharsafouan@gmail.com`.
-- Add professional social links later if they are useful to prospective clients.
+- Project enquiries are directed to `hello@safouanaouezghar.com`.
+- The verified GitHub profile is linked. Add LinkedIn once the correct public profile URL is confirmed.
 - Connect the repository to GitHub Pages, Cloudflare Pages, or another static host.
 
 ## Structure
 
 ```text
 .
-├── index.html       # Portfolio
+├── index.html       # Focused acquisition homepage
+├── work/            # Complete six-project archive
+├── case-studies/    # Full FOS, KINU and SILLAGE dossiers and collateral
+├── services-and-terms/ # Packages, additions, process and terms
 ├── fos/             # FOS Café case study
 ├── kinu/            # KINU restaurant case study
 ├── residence/       # Maison Éloise rental case study
