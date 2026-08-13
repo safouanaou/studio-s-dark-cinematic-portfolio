@@ -25,7 +25,7 @@ The personal-profile chapter introduces the independent designer behind Studio S
 
 ## Run locally
 
-This is a dependency-free static website. Start any static server from the repository root:
+The portfolio is static, with a Cloudflare Worker handling project enquiries. Start the site locally with any static server:
 
 ```bash
 python3 -m http.server 8080
@@ -33,10 +33,19 @@ python3 -m http.server 8080
 
 Then open `http://localhost:8080`.
 
+The production enquiry endpoint uses Cloudflare Turnstile, an EU-jurisdiction D1 database and Cloudflare Email Service. Worker bindings and routes are declared in `wrangler.jsonc`; `TURNSTILE_SECRET` and `RATE_LIMIT_SALT` are encrypted Worker secrets and must never be committed.
+
+Validate the Worker before deployment:
+
+```bash
+npm install
+npm run check
+```
+
 ## Before publishing professionally
 
 - The profile identifies Safouan Aouezghar and lists English, French and Arabic.
-- Project enquiries are directed to `hello@safouanaouezghar.com`.
+- Project enquiries are stored for up to 12 months and delivered to the verified owner address. The public reply address remains `hello@safouanaouezghar.com`.
 - The verified GitHub profile is linked. Add LinkedIn once the correct public profile URL is confirmed.
 - Connect the repository to GitHub Pages, Cloudflare Pages, or another static host.
 
@@ -45,6 +54,8 @@ Then open `http://localhost:8080`.
 ```text
 .
 ├── index.html       # Focused acquisition homepage
+├── worker/          # Secure enquiry endpoint and email delivery
+├── migrations/      # D1 enquiry storage schema
 ├── work/            # Complete six-project archive
 ├── case-studies/    # Full FOS, KINU and SILLAGE dossiers and collateral
 ├── services-and-terms/ # Packages, additions, process and terms
